@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root{
+    --viola: #6341BF;
+    --giallo: #FFEB12;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+#percorso{
+    background-color: var(--viola);
+    display: flex;
+    padding: 50px 0;
+}
+
+.percorso-description{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 20px;
+}
+
+.percorso-description h1{
+    font-size: 70px;
+    color: var(--giallo);
+}
+
+.percorso-description p{
+    color: white;
+    font-size: 25px;
+}
+
+.percorso-description a,
+.candidati-btn{
+    text-decoration: none;
+    color: var(--viola);
+    padding: 10px 35px;
+    background-color: var(--giallo);
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.percorso-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .percorso-image div{
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+} */
+
+
+#competenze{
+    background-color: var(--giallo);
+    padding-top: 30px;
+}
+
+#competenze h2{
+    color: var(--viola);
+    text-align: center;
+}
+
+.competenze-container{
+    display: flex;
+    padding: 50px 150px;
+}
+.competenze-item{
+    display: flex;
+    gap: 15px;
+}
+
+.circle-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-icon svg {
+    width: 30%;
+    height: 30%;
+}
+
+.competenze-description{
+    margin-bottom: 20px;
+}
+.competenze-description p,
+.competenze-description h3{
+    font-size: 16px;
+}
+
+.competenze-description h3{
+    color: var(--viola);
+    margin-bottom: 16px;
+}
+
+#perche{
+    background-color: var(--viola);
+    padding: 30px 0;
+}
+
+#perche h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.perche-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 50px;
+}
+
+.perche{
+    background-color: var(--giallo);
+    padding: 50px 25px;
+    width: 350px;
+    position: relative;
+}
+
+.perche h3{
+    color: var(--viola);
+}
+
+.circle-icon-perche{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+.candidati-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.candidati-btn{
+    border-radius: 20px;
+}
+
+@media (max-width:992px){
+    #percorso{
+        flex-direction: column-reverse;
+    }
+
+    .percorso-description,
+    .percorso-image{
+        width: 100%;
+    }
+    .competenze-container,
+    .perche-container{
+        flex-direction: column;
+    }
+
+    .perche-container{
+        justify-content: center;
+        align-items: center;
+    }
+}
