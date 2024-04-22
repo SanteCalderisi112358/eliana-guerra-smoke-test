@@ -153,6 +153,25 @@
     border-radius: 20px;
 }
 
+ #bandi{
+    padding: 50px;
+}
+/* .bandi-container{
+    display: flex;
+    gap: 20px;
+    height: 500px;
+} */
+/* .bando{
+    height: 100%;
+    width: 25%;
+}  */
+
+.bando {
+    width: calc(25% - 20px); /* Sottrai il padding e margin */
+    margin: 10px; /* Spazio tra gli elementi */
+    float: left; /* Per affiancare gli elementi */
+    box-sizing: border-box; /* Considera padding e border come parte della larghezza */
+}
 @media (max-width:992px){
     #percorso{
         flex-direction: column-reverse;
@@ -170,5 +189,20 @@
     .perche-container{
         justify-content: center;
         align-items: center;
+    }
+
+    .bando {
+        width: calc(50% - 20px); /* Due elementi per riga */
+    }
+}
+
+@media (max-width: 600px) {
+    .bando {
+        width: 100%; /* Un elemento per riga */
+    }
+
+    .bando-logo{
+        display: flex;
+        justify-content: center;
     }
 }
