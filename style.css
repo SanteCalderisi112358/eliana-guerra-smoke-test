@@ -267,7 +267,9 @@
     .perche {
         width: 287px;
     }
-
+.percorso-description{
+    padding: 1rem;
+}
     .percorso-description h1 {
         font-size: 30px;
     }
