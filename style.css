@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-:root{
+:root {
     --viola: #6341BF;
     --giallo: #FFEB12;
 
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
 }
-#percorso{
+
+#percorso {
     background-color: var(--viola);
     display: flex;
     padding: 50px 0;
 }
 
-.percorso-description{
+.percorso-description {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -28,18 +29,18 @@
     gap: 20px;
 }
 
-.percorso-description h1{
+.percorso-description h1 {
     font-size: 70px;
     color: var(--giallo);
 }
 
-.percorso-description p{
+.percorso-description p {
     color: white;
     font-size: 25px;
 }
 
 .percorso-description a,
-.candidati-btn{
+.candidati-btn {
     text-decoration: none;
     color: var(--viola);
     padding: 10px 35px;
@@ -49,7 +50,7 @@
     text-align: center;
 }
 
-.percorso-image{
+.percorso-image {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -57,7 +58,7 @@
     overflow: hidden;
 }
 
-.percorso-image img{
+.percorso-image img {
     width: 500px;
 }
 
@@ -68,22 +69,23 @@
 } */
 
 
-#competenze{
+#competenze {
     background-color: var(--giallo);
     padding-top: 30px;
 }
 
-#competenze h2{
+#competenze h2 {
     color: var(--viola);
     text-align: center;
     font-size: 30px;
 }
 
-.competenze-container{
+.competenze-container {
     display: flex;
     padding: 50px;
 }
-.competenze-item{
+
+.competenze-item {
     display: flex;
     gap: 15px;
 }
@@ -103,133 +105,142 @@
     height: 30%;
 }
 
-.competenze-description{
+.competenze-description {
     margin-bottom: 20px;
 }
+
 .competenze-description p,
-.competenze-description h3{
+.competenze-description h3 {
     font-size: 16px;
 }
 
-.competenze-description h3{
+.competenze-description h3 {
     color: var(--viola);
     margin-bottom: 16px;
 }
 
-#perche{
+#perche {
     background-color: var(--viola);
     padding: 30px 0;
 }
 
-#perche h2{
+#perche h2 {
     color: white;
     text-align: center;
     margin-bottom: 50px;
     font-size: 30px;
 }
 
-.perche-container{
+.perche-container {
     display: flex;
     justify-content: center;
     gap: 50px;
     padding: 30px 50px;
 }
 
-.perche{
+.perche {
     background-color: var(--giallo);
     padding: 50px 25px;
     width: 350px;
     position: relative;
 }
 
-.perche h3{
+.perche h3 {
     color: var(--viola);
     margin-bottom: 30px;
 }
 
-.circle-icon-perche{
+.circle-icon-perche {
     position: absolute;
     top: 0;
     transform: translateY(-50%);
 }
-.candidati-container{
+
+.candidati-container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.candidati-btn{
+
+.candidati-btn {
     border-radius: 20px;
 }
 
- #bandi{
+#bandi {
     padding: 6rem;
     padding-top: 30px;
     background-color: var(--giallo);
 }
 
-#bandi h2{
+#bandi h2 {
     text-align: center;
     color: var(--viola);
     margin-bottom: 50px;
     font-size: 30px;
 }
 
-.bandi-container{
+.bandi-container {
     background-color: var(--giallo);
 }
-.bandi-container{
+
+.bandi-container {
     display: flex;
     gap: 20px;
-} 
- .bando{
+}
+
+.bando {
     height: 100%;
     width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
 
-.bando-logo{
+.bando-logo {
     width: 100%;
     margin-bottom: 50px;
 }
 
-.bando-logo img{
+.bando-logo img {
     width: 100%;
     aspect-ratio: 16/9;
 }
 
-.bando-description{
+.bando-description {
     width: 90%;
-   
-}
-.bando-description h3{
-font-size: 15px;
-margin-bottom: 30px;
+
 }
 
-.bando-description>ul{
-margin-bottom: 30px;
-font-size: 15px;
+.bando-description h3 {
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
-@media (max-width:992px){
-    #percorso{
+.bando-description>ul {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+@media (max-width:992px) {
+    #percorso {
         flex-direction: column-reverse;
     }
-#bandi{
-    padding: 2rem;
-}
+
+    #bandi {
+        padding: 2rem;
+    }
+
     .percorso-description,
-    .percorso-image{
+    .percorso-image {
         width: 100%;
     }
+
     .competenze-container,
-    .perche-container{
+    .perche-container {
         flex-direction: column;
     }
 
-    .perche-container{
+    .perche-container {
         justify-content: center;
         align-items: center;
     }
@@ -244,32 +255,37 @@ font-size: 15px;
 }
 
 @media (max-width: 600px) {
-    .perche{
+
+    .perche {
         width: 287px;
     }
-    .percorso-description h1{
+
+    .percorso-description h1 {
         font-size: 30px;
     }
 
-    .percorso-image img{
-        width: 300px;
-    }
-    #bandi,
-    .competenze-container{
-        padding: 1rem;
-    }
-    .bando {
-        width: 100%; /* Un elemento per riga */
+    .percorso-image img {
+        width: 0;
     }
 
-    .bando-logo{
+    #bandi,
+    .competenze-container {
+        padding: 1rem;
+    }
+
+    .bando {
+        width: 100%;
+        /* Un elemento per riga */
+    }
+
+    .bando-logo {
         display: flex;
         justify-content: center;
     }
 
-    .bandi-container{
+    .bandi-container {
         flex-direction: column;
     }
 
-    
+
 }
