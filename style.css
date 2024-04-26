@@ -80,6 +80,9 @@
     font-size: 30px;
 }
 
+.competenze{
+    width: 50%;
+}
 .competenze-container {
     display: flex;
     padding: 50px;
@@ -88,6 +91,7 @@
 .competenze-item {
     display: flex;
     gap: 15px;
+    height: 33.33%;
 }
 
 .circle-icon {
@@ -252,6 +256,10 @@
         flex-direction: column;
         align-items: center;
     } */
+.competenze{
+    width: 100%;
+}
+    
 }
 
 @media (max-width: 600px) {
@@ -276,6 +284,9 @@
     .bando {
         width: 100%;
         /* Un elemento per riga */
+    }
+    .competenze{
+        width: 100%;
     }
 
     .bando-logo {
