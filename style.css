@@ -54,6 +54,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.percorso-image img{
+    width: 500px;
 }
 
 /* .percorso-image div{
@@ -71,11 +76,12 @@
 #competenze h2{
     color: var(--viola);
     text-align: center;
+    font-size: 30px;
 }
 
 .competenze-container{
     display: flex;
-    padding: 50px 150px;
+    padding: 50px;
 }
 .competenze-item{
     display: flex;
@@ -119,6 +125,7 @@
     color: white;
     text-align: center;
     margin-bottom: 50px;
+    font-size: 30px;
 }
 
 .perche-container{
@@ -137,6 +144,7 @@
 
 .perche h3{
     color: var(--viola);
+    margin-bottom: 30px;
 }
 
 .circle-icon-perche{
@@ -154,29 +162,64 @@
 }
 
  #bandi{
-    padding: 50px;
+    padding: 6rem;
+    padding-top: 30px;
+    background-color: var(--giallo);
 }
-/* .bandi-container{
+
+#bandi h2{
+    text-align: center;
+    color: var(--viola);
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.bandi-container{
+    background-color: var(--giallo);
+}
+.bandi-container{
     display: flex;
     gap: 20px;
-    height: 500px;
-} */
-/* .bando{
+} 
+ .bando{
     height: 100%;
     width: 25%;
-}  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
-.bando {
-    width: calc(25% - 20px); /* Sottrai il padding e margin */
-    margin: 10px; /* Spazio tra gli elementi */
-    float: left; /* Per affiancare gli elementi */
-    box-sizing: border-box; /* Considera padding e border come parte della larghezza */
+.bando-logo{
+    width: 100%;
+    margin-bottom: 50px;
 }
+
+.bando-logo img{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.bando-description{
+    width: 80%;
+   
+}
+.bando-description h3{
+font-size: 15px;
+margin-bottom: 30px;
+}
+
+.bando-description>ul{
+margin-bottom: 30px;
+font-size: 15px;
+}
+
 @media (max-width:992px){
     #percorso{
         flex-direction: column-reverse;
     }
-
+#bandi{
+    padding: 2rem;
+}
     .percorso-description,
     .percorso-image{
         width: 100%;
@@ -191,12 +234,30 @@
         align-items: center;
     }
 
-    .bando {
-        width: calc(50% - 20px); /* Due elementi per riga */
+    /* .bando {
+        width: calc(50% - 20px); 
     }
+    .bandi-container{
+        flex-direction: column;
+        align-items: center;
+    } */
 }
 
 @media (max-width: 600px) {
+    .perche{
+        width: 287px;
+    }
+    .percorso-description h1{
+        font-size: 30px;
+    }
+
+    .percorso-image img{
+        width: 300px;
+    }
+    #bandi,
+    .competenze-container{
+        padding: 1rem;
+    }
     .bando {
         width: 100%; /* Un elemento per riga */
     }
@@ -205,4 +266,10 @@
         display: flex;
         justify-content: center;
     }
+
+    .bandi-container{
+        flex-direction: column;
+    }
+
+    
 }
