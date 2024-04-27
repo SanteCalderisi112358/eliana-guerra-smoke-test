@@ -15,6 +15,9 @@ ScrollReveal().reveal(".percorso-description h1",
 ScrollReveal().reveal(".percorso-description p",
 {...scrollReavealOptions,
 delay:500})
+ScrollReveal().reveal(".percorso-image",
+{...scrollReavealOptionsCompetenze,
+delay:500})
 ScrollReveal().reveal(".percorso-description a",
 {...scrollReavealOptions,
 delay:1000})
