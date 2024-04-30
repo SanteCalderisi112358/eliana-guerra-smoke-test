@@ -1,1 +1,340 @@
-@import url(https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap);#bandi h2,#calendly h2,#competenze h2,#perche h2{text-align:center;font-size:30px}#perche,#percorso{background-color:var(--viola)}:root{--viola:#6341BF;--giallo:#FFEB12}*{padding:0;margin:0;box-sizing:border-box;font-family:Sora,sans-serif}#percorso{display:flex;padding:50px 0}.percorso-description{width:60%;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:0 50px;gap:20px}.percorso-description h1{font-size:70px;color:var(--giallo)}.percorso-description p{color:#fff;font-size:25px}#bandi h2,#competenze h2,.competenze-description h3,.email a,.instagram a,.perche h3,footer h2{color:var(--viola)}.candidati-btn,.percorso-description a{text-decoration:none;color:var(--viola);padding:10px 35px;background-color:var(--giallo);font-size:20px;width:250px;text-align:center}.percorso-image{width:40%;display:flex;justify-content:center;align-items:center;overflow:hidden}.circle-icon,.perche-container{justify-content:center;display:flex}.percorso-image img{width:500px}#competenze{background-color:var(--giallo);padding-top:30px}.competenze{width:50%}.competenze-container{display:flex;padding:50px}.competenze-item{display:flex;gap:15px;height:33.33%}.circle-icon{width:50px;height:50px;background-color:#fff;border-radius:50%;align-items:center}#bandi,.bandi-container,.perche,footer{background-color:var(--giallo)}.circle-icon svg{width:30%;height:30%}.competenze-description{margin-bottom:20px}#bandi h2,#perche h2,.bando-logo{margin-bottom:50px}.competenze-description h3,.competenze-description p{font-size:16px}.bando-description h3,.bando-description>ul{font-size:15px;margin-bottom:30px}.competenze-description h3{margin-bottom:16px}#perche{padding:30px 0}#perche h2{color:#fff}.perche-container{gap:50px;padding:30px 50px}.perche{padding:50px 25px;width:350px;position:relative}.perche h3{margin-bottom:30px}.circle-icon-perche{position:absolute;top:0;transform:translateY(-50%)}.candidati-container{width:100%;display:flex;justify-content:center}#calendly,.bando{flex-direction:column;display:flex}.candidati-btn{border-radius:20px}#bandi{padding:30px 6rem 6rem}.bandi-container{display:flex;gap:20px}.bando{height:100%;width:25%;align-items:center}.bando-logo{width:100%}.bando-logo img{width:100%;aspect-ratio:16/9}.bando-description{width:90%}#calendly{background-color:var(--viola);align-items:center;padding-bottom:50px}#calendly h2{margin:30px 0;color:#fff}footer{display:flex;flex-direction:column;padding:4rem}footer h2{font-size:15px}.logos-container{display:flex;justify-content:end;gap:15px}.email a,.instagram a{display:flex;justify-content:start;align-items:center;text-decoration:none;gap:5px}@media (max-width:992px){#percorso{flex-direction:column-reverse}#bandi{padding:2rem}.competenze,.percorso-description,.percorso-image{width:100%}.competenze-container,.perche-container{flex-direction:column}.perche-container{justify-content:center;align-items:center}}@media (max-width:600px){.perche{width:287px}#bandi,.competenze-container,.percorso-description,footer{padding:1rem}.percorso-description h1{font-size:30px}.percorso-image img{width:0}.bando,.competenze{width:100%}.bando-logo{display:flex;justify-content:center}.bandi-container,.logos-container{flex-direction:column}footer h2{margin-bottom:30px}}
+@import url(https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap);
+:root {
+    --viola: #6341BF;
+    --giallo: #FFEB12
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Sora, sans-serif
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+#bandi h2,
+#calendly h2,
+#competenze h2,
+#perche h2 {
+    text-align: center;
+    font-size: 30px
+}
+
+#perche,
+#percorso {
+    background-color: var(--viola)
+}
+
+
+
+#percorso {
+    display: flex;
+    padding: 50px 0
+}
+
+.percorso-description {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    gap: 20px
+}
+
+.percorso-description h1 {
+    font-size: 70px;
+    color: var(--giallo)
+}
+
+.percorso-description p {
+    color: #fff;
+    font-size: 25px
+}
+
+#bandi h2,
+#competenze h2,
+.competenze-description h3,
+.email a,
+.instagram a,
+.perche h3,
+footer h2 {
+    color: var(--viola)
+}
+
+.candidati-btn,
+.percorso-description a {
+    text-decoration: none;
+    color: var(--viola);
+    padding: 10px 35px;
+    background-color: var(--giallo);
+    font-size: 20px;
+    width: 250px;
+    text-align: center
+}
+
+.percorso-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.circle-icon,
+.perche-container {
+    justify-content: center;
+    display: flex
+}
+
+.percorso-image img {
+    width: 500px
+}
+
+#competenze {
+    background-color: var(--giallo);
+    padding-top: 30px
+}
+
+.competenze {
+    width: 50%
+}
+
+.competenze-container {
+    display: flex;
+    padding: 50px
+}
+
+.competenze-item {
+    display: flex;
+    gap: 15px;
+    height: 33.33%
+}
+
+.circle-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    align-items: center
+}
+
+#bandi,
+.bandi-container,
+.perche,
+footer {
+    background-color: var(--giallo)
+}
+
+.circle-icon svg {
+    width: 30%;
+    height: 30%
+}
+
+.competenze-description {
+    margin-bottom: 20px
+}
+
+#bandi h2,
+#perche h2,
+.bando-logo {
+    margin-bottom: 50px
+}
+
+.competenze-description h3,
+.competenze-description p {
+    font-size: 16px
+}
+
+.bando-description h3,
+.bando-description>ul {
+    font-size: 15px;
+    margin-bottom: 30px
+}
+
+.competenze-description h3 {
+    margin-bottom: 16px
+}
+
+#perche {
+    padding: 30px 0
+}
+
+#perche h2 {
+    color: #fff
+}
+
+.perche-container {
+    gap: 50px;
+    padding: 30px 50px
+}
+
+.perche {
+    padding: 50px 25px;
+    width: 350px;
+    position: relative
+}
+
+.perche h3 {
+    margin-bottom: 30px
+}
+
+.circle-icon-perche {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%)
+}
+
+.candidati-container {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+#calendly,
+.bando {
+    flex-direction: column;
+    display: flex
+}
+
+.candidati-btn {
+    border-radius: 20px
+}
+
+#bandi {
+    padding: 30px 6rem 6rem
+}
+
+.bandi-container {
+    display: flex;
+    gap: 20px
+}
+
+.bando {
+    height: 100%;
+    width: 25%;
+    align-items: center
+}
+
+.bando-logo {
+    width: 100%
+}
+
+.bando-logo img {
+    width: 100%;
+    aspect-ratio: 16/9
+}
+
+.bando-description {
+    width: 90%
+}
+
+#calendly {
+    background-color: var(--viola);
+    align-items: center;
+    padding-bottom: 50px
+}
+
+#calendly h2 {
+    margin: 30px 0;
+    color: #fff
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem
+}
+
+footer h2 {
+    font-size: 15px
+}
+
+footer h3{
+    font-size: 12px;
+    color: var(--viola);
+}
+
+.logos-container {
+    display: flex;
+    justify-content: end;
+    gap: 15px
+}
+
+.email a,
+.instagram a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px
+}
+
+@media (max-width:992px) {
+    #percorso {
+        flex-direction: column-reverse
+    }
+
+    #bandi {
+        padding: 2rem
+    }
+
+    .competenze,
+    .percorso-description,
+    .percorso-image {
+        width: 100%
+    }
+
+    .competenze-container,
+    .perche-container {
+        flex-direction: column
+    }
+
+    .perche-container {
+        justify-content: center;
+        align-items: center
+    }
+}
+
+@media (max-width:600px) {
+    .perche {
+        width: 287px
+    }
+
+    #bandi,
+    .competenze-container,
+    .percorso-description,
+    footer {
+        padding: 1rem
+    }
+
+    .percorso-description h1 {
+        font-size: 30px
+    }
+
+    .percorso-image img {
+        width: 0
+    }
+
+    .bando,
+    .competenze {
+        width: 100%
+    }
+
+    .bando-logo {
+        display: flex;
+        justify-content: center
+    }
+
+    .bandi-container,
+    .logos-container {
+        flex-direction: column
+    }
+
+    footer h3 {
+        margin-bottom: 30px
+    }
+}
